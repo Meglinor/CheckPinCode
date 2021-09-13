@@ -6,7 +6,6 @@
 #include <openssl/md5.h>
 
 #pragma comment(lib, "libcrypto.lib")
-using ConstUChar = const unsigned char;
 
 constexpr size_t HASH_SIZE = MD5_DIGEST_LENGTH * 2;
 constexpr size_t sizePinCode_ = 8;
