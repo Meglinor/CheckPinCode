@@ -1,10 +1,10 @@
 #include "HashDecode.h"
 #include <iostream>
 
-constexpr int pow(int base, int ευπ) noexcept
+constexpr int pow(int base, int Γ¥ΓµΓ°) noexcept
 {
     auto result = 1;
-    for (int i = 0; i < ευπ; ++i) result *= base;
+    for (int i = 0; i < Γ¥ΓµΓ°; ++i) result *= base;
     return result;
 } 
 
@@ -153,7 +153,7 @@ std::string HashDecode::getResult()
         {
             unsigned char buffer[sizePinCode_ + 1];
             intToUChar(result_, buffer);
-            buffer[sizePinCode_] = 0;
+            buffer[sizePinCode_+1] = 0;
             return std::string(reinterpret_cast<char*>(buffer));
         }
         else
